@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Dialept Formatter</title>
+  </head>
+  <body style="display:flex;justify-content:center;align-items:center;flex-direction:column;">
+    <h1 style="font-size:18px">Dialept Formatter</h1>
+    <main style="display:flex;">
+      <div class="center">
+        <h3 style="margin: 15px 0 0 0;">Shortkeys</h3>
+        <div style="margin: 20px"><kbd>control enter</kbd><span style="margin-left: 10px;">to format</span></div>
+        <div style="margin: 20px"><kbd>control '</kbd><span style="margin-left: 10px">to copy</span></div>
+      </div>
+      <div><textarea id="input" rows="20" cols="50"></textarea></div>
+      <div class="outputContainer"><p id="output"></p></div>
+    </main>
+    <div style="display:flex;margin-top:20px;">
+      <button onclick="format()">Format</button>
+      <button onclick="copyText()">Copy</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
