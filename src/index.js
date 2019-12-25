@@ -12,10 +12,15 @@ document.addEventListener("keydown", function(e) {
 function format() {
   var inputVal = document.getElementById("input").value;
   inputVal = inputVal.replace(/aq/g,"â");
+  inputVal = inputVal.replace(/Aq/g,"Â");
   inputVal = inputVal.replace(/eq/g,"ê");
+  inputVal = inputVal.replace(/Eq/g,"Ê");
   inputVal = inputVal.replace(/iq/g,"î");
+  inputVal = inputVal.replace(/Iq/g,"Î");
   inputVal = inputVal.replace(/uq/g,"û");
+  inputVal = inputVal.replace(/Uq/g,"Û");
   inputVal = inputVal.replace(/oq/g,"ô");
+  inputVal = inputVal.replace(/Oq/g,"Ô");
   inputVal = inputVal.replace(/j/g,"·");
 
   document.getElementById("output").innerHTML = inputVal
