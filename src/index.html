@@ -12,15 +12,24 @@
   <body class="center">
     <h1 style="font-size:18px">Dialept Formatter</h1>
     <main style="display:flex;">
-      <div class="center">
+      <div class="center shortkeys">
         <h3 style="margin: 15px 0 0 0;">Shortkeys</h3>
         <div style="margin: 20px"><kbd>control enter</kbd><span style="margin-left: 10px;">to format</span></div>
         <div style="margin: 20px"><kbd>control '</kbd><span style="margin-left: 10px">to copy</span></div>
       </div>
-      <div><textarea id="input" rows="20" cols="50"></textarea></div>
-      <div class="outputContainer"><p id="output"></p></div>
+      <div class="input-container center">
+        <div class="mobile-btns">
+          <button style="margin-right: 10px" onclick="format()">Format</button>
+        </div>
+        <textarea id="input" rows="20" cols="50"></textarea>
+        <div class="mobile-btns">
+          <button style="margin-left:10px"onclick="copyText()">Copy</button>
+        </div>
+      </div>
+      
+      <div class="outputContainer center"><p id="output"></p></div>
     </main>
-    <div style="display:flex;margin-top:20px;">
+    <div class="btns">
       <button onclick="format()">Format</button>
       <button style="margin-left:10px"onclick="copyText()">Copy</button>
     </div>

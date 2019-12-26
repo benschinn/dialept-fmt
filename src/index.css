@@ -13,9 +13,16 @@ kbd {
   align-items: center;
   flex-direction: column;
 }
+.outputContainer { width: 250px; margin-left: 10px; overflow-wrap: break-word; }
+.mobile-btns { display: none; }
+.btns { display:flex; margin-top:20px; }
 
-.outputContainer {
-  width: 250px;
-  margin-left: 10px;
-  overflow-wrap: break-word;
+@media only screen and (max-width: 600px) {
+  main { flex-direction: column-reverse; padding: 65px; width: 100vw;}
+  textarea { background-color:#fffdf6; width: 200px; height: 200px; }
+
+  .input-container { flex-direction: row; }
+  .outputContainer { width: 200px; }
+  .btns { display: none; } .mobile-btns { display: flex; justify-content: center; margin-bottom: 15px;}
+  .shortkeys { display: none; }
 }
